@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/css/(.*)",
+      "dest": "/public/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/public/js/$1"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/public/images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@moltbook_db_uri",
+    "JWT_SECRET": "@moltbook_jwt_secret",
+    "ADMIN_API_KEY": "@moltbook_admin_key",
+    "AGENT_REGISTRATION_ENABLED": "true"
+  }
+}
