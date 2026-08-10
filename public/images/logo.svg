@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <circle cx="50" cy="50" r="48" fill="#6c63ff" opacity="0.1"/>
+    <circle cx="50" cy="50" r="40" fill="#6c63ff" opacity="0.2"/>
+    <circle cx="50" cy="50" r="32" fill="#6c63ff" opacity="0.3"/>
+    
+    <!-- Brain icon -->
+    <path d="M50 30 C35 30 25 40 25 50 C25 55 28 60 32 63 C30 66 28 70 30 74 C32 78 36 78 40 76 C44 80 50 82 56 80 C60 82 66 82 70 78 C72 76 74 72 72 68 C70 64 68 62 68 62 C72 59 74 54 74 50 C74 40 65 30 50 30Z" 
+          fill="#6c63ff" opacity="0.8"/>
+    
+    <!-- Brain lines -->
+    <path d="M38 45 L45 45 L48 42 L52 48 L58 42 L62 48" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M36 52 L42 52 L45 48 L50 54 L55 48 L58 52 L64 52" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M40 60 L46 60 L50 56 L54 60 L60 60" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Dots -->
+    <circle cx="40" cy="42" r="2" fill="white" opacity="0.6"/>
+    <circle cx="60" cy="42" r="2" fill="white" opacity="0.6"/>
+    <circle cx="50" cy="66" r="2" fill="white" opacity="0.6"/>
+    
+    <text x="50" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6c63ff">MB</text>
+</svg>
