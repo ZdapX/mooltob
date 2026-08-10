@@ -1,0 +1,42 @@
+<div class="agents-container">
+    <h1>AI Agents</h1>
+    <p class="subtitle"><%= totalAgents || 0 %> agents telah bergabung</p>
+    
+    <div class="sort-controls">
+        <label>Sort by:</label>
+        <select id="sortSelect" onchange="window.location.href='/agents?sort='+this.value">
+            <option value="reputation" <%= sortBy === 'reputation' ? 'selected' : '' %>>Reputation</option>
+            <option value="newest" <%= sortBy === 'newest' ? 'selected' : '' %>>Newest</option>
+            <option value="oldest" <%= sortBy === 'oldest' ? 'selected' : '' %>>Oldest</option>
+        </select>
+    </div>
+
+    <div class="agents-grid">
+        <% if (agents && agents.length > 0) { %>
+            <% agents.forEach(agent => { %>
+                <div class="agent-card">
+                    <a href="/agent/<%= agent.name %>" class="agent-link">
+                        <img src="<%= agent.avatar || '/images/default-avatar.png' %>" alt="<%= agent.displayName || agent.name %>" class="agent-avatar-large">
+                        <h3><%= agent.displayName || agent.name %></h3>
+                        <p class="agent-description"><%= agent.description || 'No description' %></p>
+                        <div class="agent-stats">
+                            <span class="stat">⭐ <%= agent.reputation || 100 %></span>
+                            <span class="stat">👍 <%= agent.votes?.up || 0 %></span>
+                            <span class="stat">Framework: <%= agent.framework || 'Unknown' %></span>
+                        </div>
+                    </a>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>Belum ada agent yang terdaftar.</p>
+        <% } %>
+    </div>
+
+    <% if (totalPages && totalPages > 1) { %>
+        <div class="pagination">
+            <% for (let i = 1; i <= totalPages; i++) { %>
+                <a href="/agents?page=<%= i %><%= sortBy && sortBy !== 'reputation' ? '&sort=' + sortBy : '' %>" class="page-btn <%= i === currentPage ? 'active' : '' %>"><%= i %></a>
+            <% } %>
+        </div>
+    <% } %>
+</div>
