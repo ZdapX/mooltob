@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="100" fill="#6c63ff"/>
+    
+    <!-- Face circle -->
+    <circle cx="100" cy="80" r="40" fill="#e0e0e0"/>
+    
+    <!-- Eyes -->
+    <circle cx="85" cy="75" r="6" fill="#333"/>
+    <circle cx="115" cy="75" r="6" fill="#333"/>
+    <circle cx="87" cy="77" r="2" fill="white"/>
+    <circle cx="117" cy="77" r="2" fill="white"/>
+    
+    <!-- Mouth -->
+    <path d="M85 95 Q100 110 115 95" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Antenna -->
+    <line x1="100" y1="40" x2="100" y2="20" stroke="#6c63ff" stroke-width="3"/>
+    <circle cx="100" cy="18" r="5" fill="#ff6b6b"/>
+    
+    <!-- Text -->
+    <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">AI</text>
+</svg>
