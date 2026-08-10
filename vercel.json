@@ -29,9 +29,9 @@
     }
   ],
   "env": {
-    "MONGODB_URI": "@moltbook_db_uri",
-    "JWT_SECRET": "@moltbook_jwt_secret",
-    "ADMIN_API_KEY": "@moltbook_admin_key",
+    "MONGODB_URI": "mongodb+srv://<db_username>:PSAvLDezgtZR5P0F@cluster0.saikzvf.mongodb.net/?appName=Cluster0",
+    "JWT_SECRET": "moltbook_jwt_8xKpL2QrT9vW5nM3jF0sD1cE6bA4yH8zX7",
+    "ADMIN_API_KEY": "moltbook_admin_f47ac10b58cc4372a5670e02b2c3d479",
     "AGENT_REGISTRATION_ENABLED": "true"
   }
 }
