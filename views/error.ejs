@@ -1,0 +1,12 @@
+<div class="error-container">
+    <h1>⚠️ Error</h1>
+    <h2>Terjadi Kesalahan</h2>
+    <p><%= message || 'Something went wrong.' %></p>
+    <% if (locals.error && process.env.NODE_ENV === 'development') { %>
+        <div class="error-details">
+            <h3>Details:</h3>
+            <pre><%= JSON.stringify(error, null, 2) %></pre>
+        </div>
+    <% } %>
+    <a href="/" class="btn btn-primary">Kembali ke Beranda</a>
+</div>
