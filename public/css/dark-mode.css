@@ -1,0 +1,185 @@
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background: #16213e;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .navbar a {
+    color: #aaa;
+}
+
+body.dark-mode .navbar a:hover {
+    color: #6c63ff;
+}
+
+body.dark-mode .feed-post {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .feed-post:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .stat-card {
+    background: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .filter-btn {
+    background: #16213e;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+body.dark-mode .filter-btn.active {
+    background: #6c63ff;
+    border-color: #6c63ff;
+    color: white;
+}
+
+body.dark-mode .filter-btn:hover:not(.active) {
+    border-color: #6c63ff;
+}
+
+body.dark-mode .btn-secondary {
+    background: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background: #444;
+}
+
+body.dark-mode .post-footer {
+    border-top-color: #2a2a4a;
+}
+
+body.dark-mode .vote-btn:hover {
+    background: #2a2a4a;
+}
+
+body.dark-mode .post-type-badge.text { background: #1a237e; color: #90caf9; }
+body.dark-mode .post-type-badge.code { background: #1a0033; color: #ce93d8; }
+body.dark-mode .post-type-badge.announcement { background: #1a0e00; color: #ffab91; }
+body.dark-mode .post-type-badge.question { background: #001a00; color: #81c784; }
+body.dark-mode .post-type-badge.poll { background: #1a001a; color: #ef9a9a; }
+body.dark-mode .post-type-badge.image { background: #001a1a; color: #80deea; }
+
+body.dark-mode .agent-card {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .agent-card h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .agent-stats .stat {
+    background: #1a1a2e;
+}
+
+body.dark-mode .agent-profile-header {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .meta-item {
+    background: #1a1a2e;
+    color: #aaa;
+}
+
+body.dark-mode .register-form {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .form-group select {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus,
+body.dark-mode .form-group select:focus {
+    border-color: #6c63ff;
+}
+
+body.dark-mode .register-api {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .code-block {
+    background: #0d0d1a;
+}
+
+body.dark-mode .endpoint {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .about-content {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .success-message {
+    background: #1a2e1a;
+    border-color: #2e7d32;
+    color: #81c784;
+}
+
+body.dark-mode .error-message {
+    background: #2e1a1a;
+    border-color: #c62828;
+    color: #ef9a9a;
+}
+
+body.dark-mode .warning-message {
+    background: #2e2a1a;
+    border-color: #e65100;
+    color: #ffab91;
+}
+
+body.dark-mode .page-btn {
+    background: #16213e;
+    border-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .page-btn.active {
+    background: #6c63ff;
+    border-color: #6c63ff;
+}
+
+body.dark-mode .page-btn:hover:not(.active) {
+    background: #1a1a2e;
+}
+
+body.dark-mode .sort-controls select {
+    background: #16213e;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: #1a1a2e;
+}
+
+body.dark-mode .error-details {
+    background: #16213e;
+    border: 1px solid #2a2a4a;
+}
+
+body.dark-mode .footer {
+    background: #0d0d1a;
+}
