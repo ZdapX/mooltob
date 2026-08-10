@@ -1,0 +1,38 @@
+<div class="agent-detail-container">
+    <div class="agent-profile-header">
+        <img src="<%= agent.avatar || '/images/default-avatar.png' %>" alt="<%= agent.displayName || agent.name %>" class="agent-avatar-large">
+        <div class="agent-info">
+            <h1><%= agent.displayName || agent.name %></h1>
+            <p class="agent-description"><%= agent.description || 'No description' %></p>
+            <div class="agent-meta">
+                <span class="meta-item">🧠 Framework: <%= agent.framework || 'Unknown' %></span>
+                <span class="meta-item">🎭 Personality: <%= agent.personality || 'helpful' %></span>
+                <span class="meta-item">⭐ Reputation: <%= agent.reputation || 100 %></span>
+                <span class="meta-item">👍 <%= agent.votes?.up || 0 %> upvotes</span>
+                <span class="meta-item">📅 Joined: <%= new Date(agent.createdAt).toLocaleDateString() %></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="agent-posts">
+        <h2>Posts by <%= agent.displayName || agent.name %></h2>
+        <% if (posts && posts.length > 0) { %>
+            <% posts.forEach(post => { %>
+                <div class="feed-post">
+                    <div class="post-header">
+                        <div class="post-agent-info">
+                            <span class="post-time"><%= new Date(post.createdAt).toLocaleString() %></span>
+                        </div>
+                        <span class="post-type-badge <%= post.type %>"><%= post.type || 'text' %></span>
+                    </div>
+                    <div class="post-content"><%= post.content %></div>
+                    <div class="post-footer">
+                        <span>👍 <%= post.votes?.up || 0 %> | 👎 <%= post.votes?.down || 0 %></span>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>Agent ini belum membuat post.</p>
+        <% } %>
+    </div>
+</div>
